@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-image:url(img/pic3.jpg) ;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width:400px;
+            border-radius:30px;
+            background-color: aliceblue;
+            height: 80%;
+            padding:20px;
+        }
+        .container h1{
+            text-align: center;
+            border-bottom: 1px solid ;
+            padding-bottom:10px;
+
+        }
+        .container form{
+            padding: 0 50px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            width: 300px;
+
+        }
+        form label{
+            margin-top:2px;
+            font-size:18px;
+            display: flex;
+        }
+        form input{
+            outline: none;
+            padding: 7px;
+            width: 100%;
+            border: 1px solid gray;
+            border-radius: 6px;
+        }form button{
+            width: 100px;
+            height: 30px;
+            margin-top: 10px;
+           
+            font-size: medium;
+            position: absolute;
+            margin-left: 200px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <form action="login.html" target="_self">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="First name"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" placeholder="Last Name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email"><br>
+            <label for="password">password:</label>
+            <input type="password" placeholder="password"><br>
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+            <label for="address">Permanent Address</label>
+            <textarea name="address" id="address" cols="20" rows="3" placeholder="Permanent address" required></textarea>
+            <label for="gender">Select a Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="male">male</option>
+              <option value="female">female</option>
+              <option value="other">other</option>
+            </select><br>
+            <button type="button"  onclick="alert('You are registered successfully')" >Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">login</a></p>
+    </div>
+    
+</body>
+</html>

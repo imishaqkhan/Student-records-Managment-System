@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(139, 133, 145);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            background: white;
+            border-radius: 15px;
+            height:70%;
+        }
+        .center h1{
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid silver;
+
+        }
+        .center form{
+            padding: 0 50px;
+            box-sizing: border-box;
+            width: 300px;
+            margin-left: 20px;
+        }
+        form label{
+    
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        form input{
+            width: 100%;
+            padding: 7px;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }input[type="button"]{
+            width: 100px;
+            height: 35px;
+            margin-top: 20px;
+            border: none;
+            font-size: medium;}
+            input[type="button"]:hover{
+                background-color: blanchedalmond;
+            }
+            p{
+                text-align: center;
+                padding-top: -10px;
+                font-size: -15px;
+            }
+
+    </style>
+</head>
+<body>
+  <div class="center">
+    <h1>Login</h1>
+    <form action="index.html" target="_self">
+        <label for="username">username</label>
+        <input type="text" placeholder="username" required>
+        <label for="password">passsword</label>
+        <input type="password" placeholder="passsword" required>
+        <label for="link" >forgot passsword</label><br>
+        <input type="button" value="submit">
+    </form>
+<p>Don't have an account? <a href="registration.html">Register</a></p>
+  </div>
+    
+</body>
+</html>
